@@ -1,0 +1,41 @@
+Layout:
+  Main page: Home
+    About Us:
+      <!-- Team name: Lock-Dog
+      Product name: Autheni-Scan
+      David Moreno  (Electrical and Computer Engineer)
+      Jason Yan     (Computer Engineer)
+      Raj Zaveri    (Mechanical Engineer)
+      Zhichao Wei   (Architect) -->
+
+      Hello,
+      My name is David Moreno, and together with Jason Yan, Raj Zaveri, and Zhichao Wei; we form Team Lock Dog. As a group we have a diverse set of skills. I am a Electrical and Computer Engineer, Jason is Computer Engineer, Raj is a Mechanical Engineer, and Zhichao is a Architect. Over the course of a semester at Illinois Tech, we designed a working prototype of our device locking system: Autheni-Scan.
+
+    Authenti-Scan:
+      Autheni-Scan is a versatile lock out system, which blocks a desired device from actuating unless certified identification remains present in the holder. Not limited to identification scanners the Autheni-Scan can accept the a signal from a multitude of devices. Ranging from a keypad to a smartphone, once configured properly.
+
+    What is IPRO? [1]
+      Illinois Institute of Technology offers a unique experience to students called IPRO, the program was developed by Illinois Tech in 1995 for students of Junior through Graduate levels. Short for Inter-Professional Projects Program, the multidisciplinary team project is offered through three platforms, of which offers students an outlet to work on a project that caters to their passion. At the end of the semester the school holds an event called IPRO Day where there are various collaborators, sponsors, and community partners that have an interest in the products produced by the students.
+
+    The Problem:
+      Over the Fall semester of 2017 Our group was tasked with an issue that was unique, but not limited to, Illinois Tech. Illinois Tech is home to the Ideashop (use JS to link to Ideashop website [3]), a prototyping lab. What is unique about the Ideashop, is that the lab is open to students of all majors and the tools that are within the lab are also open for student for student use. That is so long as that the student has taken the safety training as specified by the user agreement. (use JS to link [4])
+
+      However, the current method of maintaining that order is outdated. Requiring the staff to use multiple custom padlocks that attach to the plug of the machine, where each lock has its own unique key. This method, while it does a satisfactory job, maintenance of machine use is a chore on not only the staff, but the students as well.
+
+
+
+  Supporting page: Design
+    
+
+  Supporting page: Influence
+  Sources:
+    [1]
+    https://ipro.iit.edu
+
+    [2] https://admissions.iit.edu/undergraduate/programs/idea-shop
+
+    [3]
+    https://wiki.ideashop.iit.edu/index.php?title=Main_Page
+
+    [4]
+    https://wiki.ideashop.iit.edu/index.php?title=User_Agreement
