@@ -63,7 +63,7 @@ body{
   padding-top: 1.78em;
   padding-left: 1.22em;
   padding-right: 1.22em;
-	background-color: #eac67a;
+  background-color: black;
 	}
 p{
 		padding-top: .22em;
@@ -81,6 +81,7 @@ h2{
   font-size: 1.45em;
 	line-height: 1.032em;
 	padding-bottom: 1.22em;
+  padding-left: 1.22em;
   text-align: left;
   position: inherit;
 }
@@ -123,9 +124,7 @@ li li:last-child{
 	}
 	footer{
 		font-size: .611em;
-		background-color: black;
 		text-align: center;
-		border-radius: 1.22em;
 		color: #eac67a;
     clear:both;
 	}
@@ -149,6 +148,33 @@ li li:last-child{
 .flexbox #navigation li {
   float: none;
 }
+#a{
+  height: 75%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+}
+#b{
+  height: 75%;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: thick;
+  background-color: gray;
+  padding-top: 1.22em;
+  padding-bottom: 1.22em;
+}
+#c{
+  height: 125%;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: thick;
+  background-color: gray;
+  padding-top: 1.22em;
+  padding-bottom: 1.22em;
+}
+#header, #a{
+  background-color: white;
+}
 	#content{
 		position: relative;
 	}
@@ -158,23 +184,25 @@ li li:last-child{
 	}
 	.cssgrid #content{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 2.035%;
 		grid-row-gap: 15px;
 	}
   #desc{
     float: right;
-    width: 45%;
+    padding-left: 0;
+    width: 50%;
   }
   .flexbox #desc{
     display: flex;
     align-items: baseline;
   }
   .cssgrid #desc{
-    grid-column: 2/3
+    grid-column: 2/2
   }
   #about{
     float: left;
+    padding-right: 1.22em;
     width: 50%;
   }
   .flexbox #about{
@@ -182,28 +210,41 @@ li li:last-child{
     align-items: baseline;
   }
   .cssgrid #about{
-    grid-column: 1/3
+    grid-column: 1/2
+  }
+  #impact{
+    float: left;
+    padding-left: 1.22em;
+    padding-right: 1.22em;
+    padding-top: 2.44em;
+    width: 95%;
+    text-align: left;
+  }
+  .flexbox #impact{
+    display: flex;
+    align-items: baseline;
+  }
+  .cssgrid #impact{
+    grid-column: 2/2
   }
   #group{
     max-width: 100%;
     height:320;
     float: right;
     padding: 2.44em;
-    padding-top: 0;
+    margin-right: 0;
   }
   .flexbox #group{
     display: flex;
     align-items: baseline;
   }
   .cssgrid #group{
-    grid-column: 2/3
+    grid-column: 2/2
   }
   #model{
     max-width: 100%;
     height:260;
     float: left;
-    padding: 3.44em;
-    padding-top: 0;
   }
   .flexbox #model{
     display: flex;
@@ -211,7 +252,19 @@ li li:last-child{
   }
   .cssgrid #model{
     display: grid;
-    grid-column: 1/3;
+    grid-column: 1/2;
+  }
+  #shop{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+  .flexbox #shop{
+    display: flex;
+  }
+  .cssgrid #shop{
+    display: grid;
+    grid-column: 2/2;
   }
 	/*State Styles*/
 	@media screen and (min-width: 280px) {
@@ -229,10 +282,14 @@ li li:last-child{
           float:none;
           height:180;
         }
-        #model{
+    #model{
           float:none;
           height:140;
         }
+    #shop{
+      float: none;
+      height: 300;
+    }
 	}
 	@media screen and (min-width: 410px) {
 		body{
@@ -271,7 +328,7 @@ li li:last-child{
       height:200;
     }
 	}
-	@media screen and (min-width: 730px) {
+	@media screen and (min-width: 700px) {
 		body{
 			padding-left: 3.25%;
 			padding-right: 3.25%;
@@ -308,16 +365,27 @@ li li:last-child{
 	}
 	@media screen and (min-width: 1185px) {
 		body{
-			padding-left: 6%;
-			padding-right: 6%;
+			padding-left: 1.5%;
+			padding-right: 1.5%;
 		}
-		article{
-			padding-bottom: .9375em;
-		}
+		section{
+			padding-top: 4.88em;
+    }
+      #about{
+        padding-left: 1.22em;
+      }
+      #desc{
+        padding-right: 1.22em;
+      }
     #group{
-      height:340;
+      height: 340;
     }
     #model{
       height:300;
     }
+    #shop{
+      height: 420;
+    }
 	}
+  /* TODO: make background slides
+           adjust media queries*/
