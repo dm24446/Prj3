@@ -66,7 +66,8 @@ body{
   background-color: black;
 	}
 p{
-		padding-top: .22em;
+    line-height: 2.44em;
+    padding-top: .22em;
 		padding-bottom: .22em;
     padding-right: 1.22em;
 }
@@ -128,6 +129,20 @@ li li:last-child{
 		color: #eac67a;
     clear:both;
 	}
+  .js u[href]{
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+  }
+  .js abbr[title] {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+abbr[title].is-expanded {
+  cursor: unset;
+  color: inherit;
+}
 /*Layout*/
 #navigation {
   position: absolute;
@@ -372,13 +387,13 @@ li li:last-child{
 			padding-top: 4.88em;
     }
       #about{
-        padding-left: 1.22em;
+        padding-left: 2.44em;
       }
       #desc{
         padding-right: 1.22em;
       }
     #group{
-      height: 340;
+      height: 400;
     }
     #model{
       height:300;
