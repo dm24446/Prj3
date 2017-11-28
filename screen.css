@@ -64,6 +64,7 @@ body{
   padding-left: 1.22em;
   padding-right: 1.22em;
   background-color: black;
+  position: fixed;
 	}
 p{
     line-height: 2.44em;
@@ -128,21 +129,9 @@ li li:last-child{
 		text-align: center;
 		color: #eac67a;
     clear:both;
+    background-color: black;
+    position: relative;
 	}
-  .js u[href]{
-    cursor: pointer;
-    color: blue;
-    text-decoration: none;
-  }
-  .js abbr[title] {
-  cursor: pointer;
-  color: blue;
-  text-decoration: none;
-}
-abbr[title].is-expanded {
-  cursor: unset;
-  color: inherit;
-}
 /*Layout*/
 #navigation {
   position: absolute;
@@ -154,78 +143,49 @@ abbr[title].is-expanded {
   width: 33.333333%;
   float: left;
 }
-.flexbox #navigation {
+#content{
   position: static;
 }
-.flexbox #navigation ul {
-  display: flex;
-}
-.flexbox #navigation li {
-  float: none;
+#header, #a{
+  background-color: white;
 }
 #a{
   height: 75%;
   border-bottom-color: black;
   border-bottom-style: solid;
-  border-bottom-width: thick;
+  border-bottom-width: .611em;
+  padding-bottom: 12.44em;
+  position: relative;
 }
 #b{
-  height: 75%;
+  height: 100%;
   border-top-color: black;
   border-top-style: solid;
-  border-top-width: thick;
+  border-top-width: .611em;
   background-color: gray;
   padding-top: 1.22em;
   padding-bottom: 1.22em;
+  position: relative;
 }
 #c{
-  height: 125%;
+  height: 100%;
   border-top-color: black;
   border-top-style: solid;
-  border-top-width: thick;
+  border-top-width: .611em;
   background-color: gray;
   padding-top: 1.22em;
-  padding-bottom: 1.22em;
+  padding-bottom: 12.44em;
+  position:relative;
 }
-#header, #a{
-  background-color: white;
-}
-	#content{
-		position: relative;
-	}
-	.flexbox #content{
-		display: flex;
-		align-items: baseline;
-	}
-	.cssgrid #content{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 2.035%;
-		grid-row-gap: 15px;
-	}
   #desc{
     float: right;
     padding-left: 0;
     width: 50%;
   }
-  .flexbox #desc{
-    display: flex;
-    align-items: baseline;
-  }
-  .cssgrid #desc{
-    grid-column: 2/2
-  }
   #about{
     float: left;
     padding-right: 1.22em;
     width: 50%;
-  }
-  .flexbox #about{
-    display: flex;
-    align-items: baseline;
-  }
-  .cssgrid #about{
-    grid-column: 1/2
   }
   #impact{
     float: left;
@@ -235,13 +195,6 @@ abbr[title].is-expanded {
     width: 95%;
     text-align: left;
   }
-  .flexbox #impact{
-    display: flex;
-    align-items: baseline;
-  }
-  .cssgrid #impact{
-    grid-column: 2/2
-  }
   #group{
     max-width: 100%;
     height:320;
@@ -249,158 +202,408 @@ abbr[title].is-expanded {
     padding: 2.44em;
     margin-right: 0;
   }
-  .flexbox #group{
-    display: flex;
-    align-items: baseline;
-  }
-  .cssgrid #group{
-    grid-column: 2/2
-  }
   #model{
     max-width: 100%;
     height:260;
     float: left;
-  }
-  .flexbox #model{
-    display: flex;
-    align-items: baseline;
-  }
-  .cssgrid #model{
-    display: grid;
-    grid-column: 1/2;
   }
   #shop{
     display: block;
     max-width: 100%;
     margin: auto;
   }
+  .flexbox #navigation {
+    position: static;
+  }
+  .flexbox #navigation ul {
+    display: flex;
+  }
+  .flexbox #navigation li {
+    float: none;
+  }
+  .flexbox #content .desc .about .impact .group .model{
+    display: flex;
+    align-items: baseline;
+  }
   .flexbox #shop{
     display: flex;
   }
-  .cssgrid #shop{
+  .cssgrid #content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.035%;
+    grid-row-gap: 15px;
+  }
+  .cssgrid #about .model{
+    display: grid;
+    grid-column: 1/2;
+  }
+  .cssgrid #desc .impact .group .shop{
     display: grid;
     grid-column: 2/2;
   }
 	/*State Styles*/
 	@media screen and (min-width: 280px) {
 		body{
-			padding-left: 0%;
-			padding-right: 0%;
+			padding-left: .5%;
+			padding-right: .5%;
 		}
 		li {
 			font-size: .611em;
 		}
-		article{
-			padding-bottom: .9375em;
-		}
+    #a{
+      height: 205%;
+    }
+    #b, #c{
+      height: 260%;
+    }
+    #model{
+          float:none;
+          height:220;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
     #group{
           float:none;
-          height:180;
+          height:240;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+            }
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
+    }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
+    }
+	}
+	@media screen and (min-width: 450px) {
+    body{
+			padding-left: .5%;
+			padding-right: .5%;
+		}
+		li {
+			font-size: .611em;
+		}
+    #a{
+      height: 150%;
+    }
+    #b{
+      height: 180%;
+    }
+    #c{
+      height: 170%;
+    }
+    #group{
+          float:none;
+          height:260;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
         }
     #model{
           float:none;
-          height:140;
+          height:240;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
         }
     #shop{
       float: none;
-      height: 300;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
+    }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
     }
 	}
-	@media screen and (min-width: 410px) {
-		body{
-			padding-left: 1%;
-			padding-right: 1%;
-		}
-		li {
-			font-size: .611em;
-		}
-		article{
-			padding-bottom: .9375em;
-		}
+	@media screen and (min-width: 500px) {
+    body{
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    li {
+      font-size: .611em;
+    }
+    #a{
+      height: 160%;
+    }
+    #b{
+      height: 160%;
+    }
+    #c{
+      height: 140%;
+    }
     #group{
-          height: 200;
+          float:none;
+          height:280;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
         }
     #model{
-          float:left;
-          height: 160;
+          float:none;
+          height:270;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
         }
-	}
-	@media screen and (min-width: 520px) {
-		body{
-			padding-left: 3%;
-			padding-right: 3%;
-		}
-		li {
-			font-size: .938em;
-		}
-		article{
-			padding-bottom: .9375em;
-		}
-    #group{
-      height:240;
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
     }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
+    }
+	}
+	@media screen and (min-width: 600px) {
+    body{
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+    }
+    li {
+      font-size: .611em;
+    }
+    #a{
+      height: 130%;
+    }
+    #b, #c{
+      height: 170%;
+    }
+    #group{
+          float:none;
+          height:260;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
     #model{
-      height:200;
+          float:none;
+          height:270;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
+    }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
     }
 	}
-	@media screen and (min-width: 700px) {
-		body{
-			padding-left: 3.25%;
-			padding-right: 3.25%;
-		}
-		li {
-			font-size: 1em;
-		}
-		article{
-			padding-bottom: .9375em;
-		}
+  @media screen and (min-width: 650px) {
+    body{
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+    }
+    li {
+      font-size: .611em;
+    }
+    #a{
+      height: 90%;
+    }
+    #b{
+      height: 130%;
+    }
+    #c{
+      height: 100%;
+    }
     #group{
-      height:260;
-      float:right;
+          float:none;
+          height:280;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #model{
+          float:none;
+          height:270;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
     }
-    #media{
-      height:220;
-      float: left;
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
     }
 	}
-	@media screen and (min-width: 920px) {
-		body{
-			padding-left: 3.25%;
-			padding-right: 3.25%;
-		}
+  @media screen and (min-width: 700px) {
+    body{
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+    }
+    li {
+      font-size: .611em;
+    }
+    #a{
+      height: 90%;
+    }
+    #b{
+      height: 130%;
+    }
+    #c{
+      height: 100%;
+    }
+    #group{
+          float:none;
+          height:300;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #model{
+          float:none;
+          height:270;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 200;
+    }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
+    }
+	}
+	@media screen and (min-width: 900px) {
 		li {
 			font-size: 1.22em;
 		}
+    #a{
+      height: 55%;
+    }
+    #b, #c{
+      height: 80%;
+    }
     #group{
       height:300;
+      margin: inherit;
+      float: right;
     }
     #model{
       height:260;
+      padding: 1.88em;
+      margin:inherit;
+      float: left;
+    }
+    #shop{
+      height: 240;
     }
 	}
-	@media screen and (min-width: 1185px) {
-		body{
-			padding-left: 1.5%;
-			padding-right: 1.5%;
+	@media screen and (min-width: 1060px) {
+		li {
+			font-size: 1.22em;
 		}
-		section{
-			padding-top: 4.88em;
+    #a{
+      height: 55%;
     }
-      #about{
-        padding-left: 2.44em;
-      }
-      #desc{
-        padding-right: 1.22em;
-      }
+    #b, #c{
+      height: 80%;
+    }
     #group{
-      height: 400;
+      height:300;
+      margin: inherit;
+      float: right;
     }
     #model{
       height:300;
+      padding: 1.88em;
+      margin:inherit;
+      float: left;
     }
     #shop{
-      height: 420;
+      height: 240;
     }
 	}
-  /* TODO: make background slides
-           adjust media queries*/
+  @media screen and (min-width: 1060px) {
+    #shop{
+      height: 280;
+    }
+	}
+  @media screen and (min-width: 1300px) {
+    #group, #model{
+      height: 340;
+    }
+    #shop{
+      height: 320;
+    }
+  }
+  .js u[href]{
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+.js abbr[title] {
+cursor: pointer;
+color: blue;
+text-decoration: none;
+}
+abbr[title].is-expanded {
+cursor: unset;
+color: inherit;
+}
+  /* TODO: make influence page shanagins
+           adjust media queries || sperate id "a"
+           adjust text spacings
+           decide on color scheme
+           figure out github multi-page issue*/
