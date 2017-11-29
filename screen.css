@@ -50,8 +50,7 @@ table {
 html {
   font-size: 1.125em;
   line-height: 1.22em; /*(22/18)*/
-
-	text-rendering: optimizeLegibility
+	text-rendering: optimizeLegibility;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -124,6 +123,9 @@ li li:last-child{
 		text-align: center;
 		text-decoration: none;
 	}
+	a{
+		color: blue;
+	}
 	footer{
 		font-size: .611em;
 		text-align: center;
@@ -146,11 +148,11 @@ li li:last-child{
 #content{
   position: static;
 }
-#header, #a{
+#header, #a, #d{
   background-color: white;
 }
-#a{
-  height: 75%;
+#a, #d{
+  height: 100px;
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: .611em;
@@ -158,7 +160,7 @@ li li:last-child{
   position: relative;
 }
 #b{
-  height: 100%;
+  height: 100px;
   border-top-color: black;
   border-top-style: solid;
   border-top-width: .611em;
@@ -168,7 +170,7 @@ li li:last-child{
   position: relative;
 }
 #c{
-  height: 100%;
+  height: 100px;
   border-top-color: black;
   border-top-style: solid;
   border-top-width: .611em;
@@ -197,20 +199,20 @@ li li:last-child{
   }
   #group{
     max-width: 100%;
-    height:320;
+    height:320px;
     float: right;
     padding: 2.44em;
     margin-right: 0;
   }
   #model{
     max-width: 100%;
-    height:260;
+    height:260px;
     float: left;
   }
   #shop{
-    display: block;
     max-width: 100%;
     margin: auto;
+		display: block;
   }
   .flexbox #navigation {
     position: static;
@@ -252,14 +254,20 @@ li li:last-child{
 			font-size: .611em;
 		}
     #a{
-      height: 205%;
+      height: 450px;
     }
-    #b, #c{
-      height: 260%;
+    #b{
+      height: 850px;
+    }
+		#c{
+      height: 850px;
+    }
+		#d{
+      height: 675px;
     }
     #model{
           float:none;
-          height:220;
+          height:220px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -267,7 +275,7 @@ li li:last-child{
         }
     #group{
           float:none;
-          height:240;
+          height:240px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -279,7 +287,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -297,17 +305,20 @@ li li:last-child{
 			font-size: .611em;
 		}
     #a{
-      height: 150%;
+      height:425px;
     }
     #b{
-      height: 180%;
+      height: 825px;
     }
     #c{
-      height: 170%;
+      height: 775px;
+    }
+		#d{
+      height: 700px;
     }
     #group{
           float:none;
-          height:260;
+          height:260px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -315,7 +326,7 @@ li li:last-child{
         }
     #model{
           float:none;
-          height:240;
+          height:240px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -327,7 +338,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -345,17 +356,20 @@ li li:last-child{
       font-size: .611em;
     }
     #a{
-      height: 160%;
+      height: 400px;
     }
     #b{
-      height: 160%;
+      height: 800px;
     }
     #c{
-      height: 140%;
+      height: 625px;
+    }
+		#d{
+      height: 575px;
     }
     #group{
           float:none;
-          height:280;
+          height:320px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -363,7 +377,7 @@ li li:last-child{
         }
     #model{
           float:none;
-          height:270;
+          height:270px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -375,7 +389,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -393,14 +407,20 @@ li li:last-child{
       font-size: .611em;
     }
     #a{
-      height: 130%;
+      height: 400px;
     }
-    #b, #c{
-      height: 170%;
+    #b{
+      height: 700px;
     }
+		#c{
+			height: 625px;
+		}
+		#d{
+			height: 550px;
+		}
     #group{
           float:none;
-          height:260;
+          height:260px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -408,7 +428,7 @@ li li:last-child{
         }
     #model{
           float:none;
-          height:270;
+          height:270px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -420,7 +440,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -429,7 +449,7 @@ li li:last-child{
       width: 90%;
     }
 	}
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 675px) {
     body{
       padding-left: 1.5%;
       padding-right: 1.5%;
@@ -438,17 +458,20 @@ li li:last-child{
       font-size: .611em;
     }
     #a{
-      height: 90%;
+      height: 400px;
     }
     #b{
-      height: 130%;
+      height: 725px;
     }
     #c{
-      height: 100%;
+      height: 600px;
     }
+		#d{
+			height: 550px;
+		}
     #group{
           float:none;
-          height:280;
+          height:280px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -456,7 +479,7 @@ li li:last-child{
         }
     #model{
           float:none;
-          height:270;
+          height:270px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -468,7 +491,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -477,7 +500,7 @@ li li:last-child{
       width: 90%;
     }
 	}
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 725px) {
     body{
       padding-left: 1.5%;
       padding-right: 1.5%;
@@ -486,17 +509,20 @@ li li:last-child{
       font-size: .611em;
     }
     #a{
-      height: 90%;
+      height: 350px;
     }
     #b{
-      height: 130%;
+      height: 650px;
     }
     #c{
-      height: 100%;
+      height: 550px;
     }
+		#d{
+			height: 500px;
+		}
     #group{
           float:none;
-          height:300;
+          height:300px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -504,7 +530,7 @@ li li:last-child{
         }
     #model{
           float:none;
-          height:270;
+          height:270px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -516,7 +542,7 @@ li li:last-child{
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-      height: 200;
+      height: 200px;
     }
     #desc, #about{
       float: none;
@@ -530,24 +556,30 @@ li li:last-child{
 			font-size: 1.22em;
 		}
     #a{
-      height: 55%;
+      height: 200px;
     }
-    #b, #c{
-      height: 80%;
+    #b{
+      height: 475px;
     }
+		#c{
+			height: 500px;
+		}
+		#d{
+			height: 325px;
+		}
     #group{
-      height:300;
+      height:300px;
       margin: inherit;
       float: right;
     }
     #model{
-      height:260;
+      height:260px;
       padding: 1.88em;
       margin:inherit;
       float: left;
     }
     #shop{
-      height: 240;
+      height: 240px;
     }
 	}
 	@media screen and (min-width: 1060px) {
@@ -555,32 +587,41 @@ li li:last-child{
 			font-size: 1.22em;
 		}
     #a{
-      height: 55%;
+      height: 200px;
     }
-    #b, #c{
-      height: 80%;
+		#b{
+			height: 400px;
+		}
+		#c{
+      height: 550px;
     }
+		#d{
+			height: 275px;
+		}
     #group{
-      height:300;
+      height:300px;
       margin: inherit;
       float: right;
     }
     #model{
-      height:300;
+      height:300px;
       padding: 1.88em;
       margin:inherit;
       float: left;
     }
     #shop{
-      height: 280;
+      height: 280px;
     }
 	}
   @media screen and (min-width: 1300px) {
-    #group, #model{
-      height: 340;
+		#c{
+				height: 500px;
+		}
+		#group, #model{
+      height: 340px;
     }
     #shop{
-      height: 320;
+      height: 320px;
     }
   }
   .js u[href]{
@@ -601,4 +642,4 @@ color: inherit;
            adjust media queries || sperate id "a"
            adjust text spacings
            decide on color scheme
-           figure out github multi-page issue*/
+           switch px to em*/
