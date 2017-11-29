@@ -67,7 +67,7 @@ body{
   position: fixed;
 	}
 p{
-    line-height: 2.44em;
+    line-height: 2.6em;
     padding-top: .22em;
 		padding-bottom: .22em;
     padding-right: 1.22em;
@@ -571,11 +571,6 @@ li li:last-child{
       margin:inherit;
       float: left;
     }
-    #shop{
-      height: 240;
-    }
-	}
-  @media screen and (min-width: 1060px) {
     #shop{
       height: 280;
     }
