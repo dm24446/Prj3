@@ -250,17 +250,71 @@ li li:last-child{
 			padding-left: .5%;
 			padding-right: .5%;
 		}
+		p{
+			font-size: .8185em;
+		}
 		li {
 			font-size: .611em;
 		}
     #a{
-      height: 450px;
+      height: 500px;
     }
     #b{
-      height: 850px;
+      height: 800px;
     }
 		#c{
-      height: 850px;
+      height: 925px;
+    }
+		#d{
+      height: 775px;
+    }
+    #model{
+          float:none;
+          height:220px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+    #group{
+          float:none;
+          height:150px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+            }
+    #shop{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: 160px;
+    }
+    #desc, #about{
+      float: none;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      width: 90%;
+    }
+	}
+	@media screen and (min-width: 360px) {
+		body{
+			padding-left: .5%;
+			padding-right: .5%;
+		}
+		li {
+			font-size: .611em;
+		}
+    #a{
+      height: 400px;
+    }
+    #b{
+      height: 725px;
+    }
+		#c{
+      height: 675px;
     }
 		#d{
       height: 675px;
@@ -275,7 +329,7 @@ li li:last-child{
         }
     #group{
           float:none;
-          height:240px;
+          height:220px;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -300,6 +354,9 @@ li li:last-child{
     body{
 			padding-left: .5%;
 			padding-right: .5%;
+		}
+		p{
+			font-size: 1em;
 		}
 		li {
 			font-size: .611em;
@@ -356,16 +413,16 @@ li li:last-child{
       font-size: .611em;
     }
     #a{
-      height: 400px;
+      height: 475px;
     }
     #b{
-      height: 800px;
+      height: 850px;
     }
     #c{
-      height: 625px;
+      height: 775px;
     }
 		#d{
-      height: 575px;
+      height: 675px;
     }
     #group{
           float:none;
@@ -512,7 +569,7 @@ li li:last-child{
       height: 350px;
     }
     #b{
-      height: 650px;
+      height: 750px;
     }
     #c{
       height: 550px;
