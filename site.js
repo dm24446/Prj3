@@ -1,5 +1,6 @@
 $('html').addClass('js').removeClass('no-js');
 $('h3').hide();
+$('button[href]').hide();
 $('a[href]').on('click', function(event) {
   window.open($(this).attr('href'), '_self');
   event.preventDefault();
@@ -10,6 +11,7 @@ $('button[href]').on('click', function(event) {
 });
 $('button[class]').click(function(event){
   $(this).hide();
+  $('button[href]').show();
   $('h3').show();
   });
 $('abbr[title]').one('click', function() {
