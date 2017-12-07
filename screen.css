@@ -56,14 +56,14 @@ html {
 	-ms-text-size-adjust: 100%;
 
   text-size-adjust: 100%;
-	font-family: times;
+	font-family: Forum;
 }
 body{
   padding-top: 1.78em;
   padding-left: 1.22em;
   padding-right: 1.22em;
   background-color: black;
-  position: fixed;
+  position: relative;
 	}
 p{
     line-height: 2.6em;
