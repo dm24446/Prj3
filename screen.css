@@ -86,6 +86,14 @@ h2{
   text-align: left;
   position: inherit;
 }
+h3{
+	font-size: 1.45em;
+	line-height: 1.032em;
+	padding-bottom: 1.22em;
+  padding-left: 1.22em;
+  text-align: center;
+  position: inherit;
+}
 li{ /*list item*/
   padding-bottom: .611em;
 }
@@ -178,6 +186,11 @@ li li:last-child{
   padding-top: 1.22em;
   padding-bottom: 12.44em;
   position:relative;
+}
+#e{
+	color: white;
+	padding-top: 1.22em;
+	text-align: center;
 }
   #desc{
     float: right;
