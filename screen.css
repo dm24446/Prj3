@@ -127,7 +127,7 @@ li li:last-child{
 		padding-top: .611em; /*11/18*/
 		padding-bottom: .611em;
 		background-color: black;
-		color: #eac67a;
+		color: white;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -137,7 +137,7 @@ li li:last-child{
 	footer{
 		font-size: .611em;
 		text-align: center;
-		color: #eac67a;
+		color: white;
     clear:both;
     background-color: black;
     position: relative;
@@ -741,7 +741,7 @@ li li:last-child{
 				height: 500px;
 		}
 		#group, #model{
-      height: 340px;
+      height: 360px;
     }
     #shop{
       height: 320px;
